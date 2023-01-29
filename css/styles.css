@@ -326,14 +326,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .hero-title {
 margin: 0 auto;
-max-width: 318px;
+max-width: 320px;
 font-family: 'Roboto';
 font-style: normal;
-font-weight: 700;
+
 font-size: 36px;
 line-height: 1.11;
 
-text-align: center;
+
 letter-spacing: 0.02em;
 text-transform: capitalize;
 
@@ -400,7 +400,6 @@ color: var(--first-background-color);
 
 .item-title {
   text-align: center;
-  display: block;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -436,6 +435,7 @@ color: var(--first-background-color);
   padding-top: 96px;
   padding-bottom: 128px;
   text-align: center;
+ 
   background-color: var(--second-background-color);
 }
 
@@ -451,18 +451,20 @@ color: var(--first-background-color);
   color: var(--main-color);
 }
 
-.team-list {
-  
-  display: block;
-  
-  
-  
-}
-
 .team-list-item {
-
-
+  
 }
+
+.team-list-item-wrap {
+  width: 264px;
+  display: inline-block;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border: 0.5px colid;
+  border-top: none;
+  background-color: var(--first-background-color);
+}
+
 
 }
 
@@ -620,7 +622,7 @@ color: var(--first-background-color);
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../image/Dark-bg-tablet@2x.jpg);
+    url(../image/dark-bg-tablet@2x.jpg);
   }
 }
 
@@ -868,6 +870,18 @@ color: var(--first-background-color);
     ),
     url(../image/people-office.jpg);
   background-size: cover;
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../image/people-office@2x.jpg);
+  }  
 }
 
 .hero-title {
