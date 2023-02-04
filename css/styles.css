@@ -162,7 +162,7 @@ stroke: var(--main-color);
 .mobile-menu-close-btn {
   position: absolute;
   top: 40px;
-  right: 20px;
+  right: 40px;
   width: 24px;
   height: 24px;
   background-color: transparent;
