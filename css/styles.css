@@ -110,8 +110,8 @@ body {
 
 .mobile-menu {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -121,7 +121,8 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .mobile-menu-open {
@@ -132,7 +133,9 @@ body {
   line-height: 0;
   border: none;
   background-color: transparent;
-  
+  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 
 }
 
@@ -149,7 +152,8 @@ stroke: var(--main-color);
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .mobile-menu-container {
@@ -157,6 +161,10 @@ stroke: var(--main-color);
   padding-left: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-menu-close-btn {
@@ -170,7 +178,9 @@ stroke: var(--main-color);
   border-radius: 50%;
   background-color: var(--fouth-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  
+  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 
 }
 
@@ -197,9 +207,7 @@ color: var(--main-color);
 }
 
 
-.mobile-nav-contacts {
-  margin-top: 284px;
-}
+
 
 .mobile-nav-contacts-link-item {
   font-weight: 500;
