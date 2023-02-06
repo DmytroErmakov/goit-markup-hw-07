@@ -77,7 +77,7 @@ body {
 
   @media screen and (min-width: 1200px) {
     .container {
-    width: 1158px;
+    width: 1160px;
   }
 }
 
@@ -336,7 +336,7 @@ color: var(--first-background-color);
 .direction {
   padding-top: 96px;
   padding-bottom: 96px;
-  background-color: var(--first-background-color);
+  background-color: var(--first-baв ckground-color);
 }
 
 .direction-title {
@@ -1285,7 +1285,7 @@ color: var(--first-background-color);
 
 .container {
   
-  height: 76px;
+  
   margin: 0 auto;
   
   padding-right: 16px;
@@ -1295,13 +1295,7 @@ color: var(--first-background-color);
 
 }
 
-.header-container {
-    
 
-  
-  
-  
-}
 
 .header {
   padding-top: 0;
@@ -1476,6 +1470,8 @@ color: var(--first-background-color);
 .direction {
   padding-top: 120px;
   padding-bottom: 120px;
+ 
+  
   background-color: var(--first-background-color);
 }
 
@@ -1491,7 +1487,7 @@ color: var(--first-background-color);
 }
 
 .direction-svg {
-  
+  display: contents;
   display: block;
   width: 100%;
   
@@ -1512,9 +1508,13 @@ color: var(--first-background-color);
 }
 
 .direction-list {
+  
   display: flex;
   align-items: center;
   gap: 24px;
+  
+  
+
 }
 
 .direction-list-item {
