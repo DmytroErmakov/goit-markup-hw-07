@@ -206,7 +206,9 @@ color: var(--main-color);
 
 }
 
-
+.mobile-nav-link-contacts {
+  color: var(--fifth-color);
+}
 
 
 .mobile-nav-contacts-link-item {
@@ -221,6 +223,15 @@ color: var(--main-color);
   margin-top: 40px;
 }
 
+.mobile-nav-phone-link {
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-transform: capitalize;
+  color: var(--fifth-color);
+}
 
 .mobile-nav-social {
   display: flex;
