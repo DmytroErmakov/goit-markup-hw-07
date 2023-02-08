@@ -294,6 +294,7 @@ color: var(--main-color);
       rgba(46, 47, 66, 0.7)
     ),
     url(../image/dark-bg@2x.jpg);
+   
   }
 }
 
@@ -860,6 +861,7 @@ color: var(--first-background-color);
       rgba(46, 47, 66, 0.7)
     ),
     url(../image/dark-bg-tablet.jpg);
+   background-size: cover; 
   
 }
 
@@ -873,6 +875,7 @@ color: var(--first-background-color);
       rgba(46, 47, 66, 0.7)
     ),
     url(../image/dark-bg-tablet@2x.jpg);
+    
   }
 }
 
@@ -1460,6 +1463,9 @@ color: var(--first-background-color);
       rgba(46, 47, 66, 0.7)
     ),
     url(../image/people-office@2x.jpg);
+    background-size: cover;
+    
+
   }
   }  
 
@@ -1577,11 +1583,9 @@ color: var(--first-background-color);
 /* doing */
 
 .doing {
-  display: contents;
+  display: block;
   padding-bottom: 120px;
- 
-
-}
+} 
 
 
 .doing-title {
